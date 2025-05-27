@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://courageous-casie-airarchives-0229921c.koyeb.app/api/$1"
+    }
+  ]
+}
