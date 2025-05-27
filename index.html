@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AirProxy</title>
+</head>
+<body>
+  <h1>Welcome to AirProxy</h1>
+  <p>This site proxies API requests to your Koyeb backend.</p>
+  <button onclick="callAPI()">Call API</button>
+  <pre id="result"></pre>
+
+  <script>
+    async function callAPI() {
+      const res = await fetch('/api/test');
+      const data = await res.text();
+      document.getElementById('result').textContent = data;
+    }
+  </script>
+</body>
+</html>
